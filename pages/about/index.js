@@ -1,4 +1,3 @@
-// import axios from "axios"
 import Comments from "../../components/Comments"
 import Post from "../../components/Post"
 import TopStories from "../../components/TopStories"
@@ -7,10 +6,9 @@ import { useDispatch, useSelector } from 'react-redux';
 
 
 const About = ({data}) => {
-  console.log("___DATA___", data)
 const dispatch = useDispatch();
 const {posts} = useSelector((state) => state.post);
-console.log("___STATE___", posts)
+
   return (
     <div>
       <Post/>

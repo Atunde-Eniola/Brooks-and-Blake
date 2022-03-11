@@ -3,19 +3,16 @@ import Link from 'next/link';
 import { useRouter } from 'next/router'
 
 const PostItems = ({posts}) => {
-  // const router = useRouter()
-  // const { pid } = router.query
+  y
 
   const sub = (str) => str.substring(0,150)
 
   return (
     <div className="bg-white px-[3.3rem]  text-gray-800 subpixel-antialiased grid gap-x-4 gap-y-10 grid-col-1  md:grid-cols-2 lg:grid-cols-4 ">
       {posts.map((item,index)=>{
-        // const str = item.content.rendered
+        
         const text  = sub(item.content.rendered)
-        // const router = useRouter()
-        // const { pid } = router.query
-        // console.log(pid)
+        
 
       return(
         <div key={index} className='' > 

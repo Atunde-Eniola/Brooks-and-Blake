@@ -7,9 +7,9 @@ const Comments = ({post_id}) => {
 const [value, setValue] = useState({})
 const [loading, setLoading] = useState(false)
   const handleOnChange = (e) =>{
-console.log("____VEEVENT__", e)
+
     setValue({...value, [e.target.name]: e.target.value })
-    console.log("____alue__", value) 
+    
    }
  
 

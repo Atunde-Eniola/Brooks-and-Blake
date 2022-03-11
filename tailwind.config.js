@@ -24,21 +24,3 @@ module.exports = {
   },
   plugins: [],
 };
-
-// module.exports = {
-//   content: [
-//     "./pages/**/*.{js,jsx}",
-//     "./components/**/*.{js,jsx}",
-//   ],
-//   theme: {
-//     extend: {
-//       screens:{
-//        xs: "540px",
-//       },
-//       fontFamily: {
-//         rapid: ['Open Sans', ...defaultTheme.fontFamily.sans],
-//     },
-//   }
-//   },
-//   plugins: [],
-// }
