@@ -6,20 +6,25 @@ import * as MdIcon from 'react-icons/md'
 const Comments = ({post_id}) => {
 const [value, setValue] = useState({})
 const [loading, setLoading] = useState(false)
+
+
+// a function called to handle the textfield
   const handleOnChange = (e) =>{
 
     setValue({...value, [e.target.name]: e.target.value })
     
    }
  
-
+///function that recieves and send input as response back to our serve as shown below.
   const handleSubmit = (e) =>{
     e.preventDefault();
     setLoading(true)
-    console.log("___ID", post_id)
+    
+    
+    //sending request to the server
     axios.post(`https://brooksandblake.com/blogapis/wp-json/wp/v2/posts/${post_id}`,value).then((response)=>{
           console.log(response)
-          setLoading(false)
+          setLoading(false)  
           setValue({username: '', email: '', text: ''})
     })
     .catch((error) => {

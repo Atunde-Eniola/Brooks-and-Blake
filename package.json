@@ -12,6 +12,7 @@
     "@reduxjs/toolkit": "^1.8.0",
     "autoprefixer": "^10.4.2",
     "axios": "^0.26.1",
+    "moment": "^2.29.1",
     "next": "12.1.0",
     "next-redux-cookie-wrapper": "^2.1.2",
     "next-redux-wrapper": "^7.0.5",

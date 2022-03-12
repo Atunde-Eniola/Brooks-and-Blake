@@ -1,4 +1,3 @@
-// import axios from 'axios';
 import Head from 'next/head';
 import BasePost from '../components/BasePost';
 import CategoryName from '../components/CategoryName';
@@ -12,7 +11,11 @@ import { wrapper } from '../redux/store';
 
  function Home({data}) {
 
-const dispatch = useDispatch();
+ // This hook returns a reference to the dispatch function from the Redux store----savePost
+ const dispatch = useDispatch(); 
+
+ //Allows you to extract data from the Redux store state, using a selector function
+ // also  return new values when the state is updated.
 const {posts} = useSelector((state) => state.post);
 
   return (
@@ -24,13 +27,15 @@ const {posts} = useSelector((state) => state.post);
     <CategoryName/>
     <Postitems posts={posts}/>
     <CategoryName/>
-    <SecondPosts/>
+    <SecondPosts data={data}/>
     <CategoryName/>
     <BasePost posts={posts} />
       </>
   )
 }
 
+//getInitialProps enables server side rendering(SSR) 
+//it means sending the page with the data already populated from the server.
 
 Home.getInitialProps = wrapper.getInitialPageProps(
   ({ dispatch }) =>

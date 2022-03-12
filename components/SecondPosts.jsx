@@ -4,7 +4,7 @@ const SecondPosts = () => {
   return (
     <>
       <div className='flex flex-col lg:flex-row px-[3.3rem] w-full h-fit gap-6'>
-        <div className='flex-1  sm:mb-4 md:flex md:flex-row lg:flex-col '>
+        <div className='flex-1  sm:mb-4 md:flex md:flex-row lg:flex-col mb-2'>
           <Image
             src='/img/video-1.jpg'
             width={400}

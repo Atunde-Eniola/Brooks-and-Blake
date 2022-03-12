@@ -6,16 +6,20 @@ const BasePost = ({posts}) => {
 
   return (
     <div className="bg-white px-[3.3rem]  text-gray-800 subpixel-antialiased grid gap-4  grid-col-1  md:grid-cols-2 lg:grid-cols-4 ">
-      {posts.map((item,index)=>{
+      {posts.slice(0,4).map((item,index)=>{
        
        const text  = sub(item.content.rendered)
+       const {jetpack_featured_media_url = "/img/coffee-1.jpg", } = item
        return(
         
         <div key={index} className='leading-none' > 
-        <Image src= {"/img/coffee-1.jpg"} alt='' width={500} height={320} className='object-cover' />
+        <Image src= {jetpack_featured_media_url} alt='' width={500} height={320} className='object-cover' />
        <h3 className='text-[1rem]  font-bold leading-none  my-3'>
          { ' ' }
-         <Link href="/about">
+         <Link href={{
+            pathname: '/about',
+            query: { id: item.id },
+          }}>
            <a>{item.title.rendered}</a>
            </Link>
          
