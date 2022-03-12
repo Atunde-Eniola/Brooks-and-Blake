@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import BasePost from '../components/BasePost';
 import CategoryName from '../components/CategoryName';
- import Postitems from '../components/Postitems';
+ import Postitems from '../components/PostItems';
 import SecondPosts from '../components/SecondPosts';
 import { useDispatch, useSelector } from 'react-redux';
 import { savePost } from '../redux/postReducer';
