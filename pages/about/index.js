@@ -11,7 +11,7 @@ const dispatch = useDispatch();
 const {posts} = useSelector((state) => state.post);
 
   return (
-    <div>
+    <div className='px-2 md:px-3 lg:px-[3.3rem] mb-12'>
       <Post data={data}/> 
       <UserPost data={data}/>  
       <Comments post_id={data.id}/>

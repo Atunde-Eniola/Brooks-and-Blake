@@ -41,12 +41,12 @@ const [loading, setLoading] = useState(false)
   
 
   return (
-    <div className='bg-white w-full px-[3.3rem]'>
+    <div className='bg-white w-full '>
      <div className='border-b-[1px] border-gray-500'>
-     <h1 className='font-bold text-sky-500 text-2xl md:text-[2rem]  lg:text-[2.15rem] leading-tight '>Reader Comments</h1>
+     <h1 className='font-bold text-sky-500 text-xl md:text-2xl  lg:text-3xl leading-tight '>Reader Comments</h1>
      </div>
       <div className='bg-gray-50 w-full py-2  md:6 lg:py-8 px-3'>
-        <div className='w-10/12 h-24 bg-white rounded-2xl shadow-md my-4 px-5 py-2'>
+        <div className='md:w-10/12 h-24 bg-white rounded-2xl shadow-md my-4 px-5 py-2'>
          
           <p className='text-[12px] font-normal'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa illum  </p>
           <div className='flex justify-between  '>
@@ -61,7 +61,7 @@ const [loading, setLoading] = useState(false)
           </div>
           </div>
 
-          <div className='w-10/12 h-24 bg-white rounded-2xl shadow-md my-4 px-5 py-2'>
+          <div className='md:w-10/12 h-24 bg-white rounded-2xl shadow-md my-4 px-5 py-2'>
          
          <p className='text-[12px] font-normal'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa illum </p>
          <div className='flex justify-between  '>
@@ -76,32 +76,31 @@ const [loading, setLoading] = useState(false)
          </div>
          </div>
 
-         <div className='bg-white w-10/12 xs:h-96 lg:h-80 py-3  px-6 mt-11'>
+         <div className='bg-white md:w-10/12 xs:h-96 lg:h-80 py-3  px-6 mt-11'>
            <h3 className='text-gray-800 font-bold my-1 md:my-2 lg:my-4 px-7'>Join the conversation</h3>
 
              <input onChange={handleOnChange} className='border-gray-300 border h-16 w-5/6 rounded-3xl focus:outline-none flex items-center px-7 my-1 md:my-3 lg:my-6' type="text" value={value.text} name='text' id='text' placeholder='Write your comment'/>
              
              <form className='xl:flex-row  my-6 lg:flex'>
-               <div className=' xs:mx-2 md:mx-4 font-medium my-1 md:my-2 lg:my-3'>
+               <div className='  md:mx-4 font-medium my-1 md:my-2 lg:my-3'>
                  
                  <label className="block text-gray-800 text-sm font-semibold mb-2" name="username">
                  Your Name
               </label>
-                 <input onChange={handleOnChange} className='px-6 border-gray-300 border h-10 w-72 rounded-3xl focus:outline-none' id="username" value={value.username} type="text" name='username'/>
+                 <input onChange={handleOnChange} className=' px-6 border-gray-300 border h-10 w-72 rounded-3xl focus:outline-none' id="username" value={value.username} type="text" name='username'/>
                </div>
 
-               <div className='xs:mx-2  md:mx-4 font-medium my-3'>
+               <div className='  md:mx-4 font-medium my-3'>
                  
                  <label className="block text-gray-800 text-sm font-semibold mb-2" name="email">Email Address</label>
                  <input onChange={handleOnChange} className='px-6 focus:outline-none border-gray-300 border h-10 w-72 rounded-3xl' type="email" name='email' value={value.email} id="email"/>
                </div>
              </form>
 
-             <div className={`${loading? "bg-sky-100" : "bg-sky-400"} text-white h-10 w-72 rounded-3xl flex justify-center cursor-pointer`}>
+             <div className={`${loading? "bg-sky-100" : "bg-sky-400"} text-white h-10 w-72 rounded-3xl flex 
+             md:ml-4 justify-center cursor-pointer`}>
                <button disabled={loading} onClick={handleSubmit} className='font-semibold '>Submit</button>
                </div>
-             
-             
          </div>
       </div>
     </div>

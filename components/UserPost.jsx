@@ -27,13 +27,13 @@ const UserPost = ({data}) => {     //the post label for the userpost
    ]
 
   return (
-    <div className="bg-white w-full px-[3.3rem] mt-8">
+    <div className="bg-white w-full  mt-8">
       <div className='flex'>
         {post.map((item,index)=>(
           
-            <div key={index} className='mx-4 flex '>
-            <div className='text-xs mt-1'>{item.icon}</div>
-            <span className='ml-2 text-gray-400 font-semibold text-[.78rem]'>{item.title}</span>
+            <div key={index} className=' mx-1 md:mx-4 flex '>
+            <div className='text-xs mt-1 '>{item.icon}</div>
+            <span className='  ml-2 text-gray-400 font-semibold text-[.78rem]'>{item.title}</span>
             </div>
             
         ))}

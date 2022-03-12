@@ -8,9 +8,9 @@ const Post = ({data}) => {
         const {jetpack_featured_media_url = "/img/coffee-1.jpg", } = data
 
   return (
-    <div className='px-[3.3rem] h-fit bg-white w-full'>
+    <div className='h-fit bg-white w-full'>
       
-      <h1 className='font-light text-4xl font-faith text-gray-900 mb-5'dangerouslySetInnerHTML={{__html: text}}/>
+      <h1 className='font-light text-[1.1rem] md:text-lg lg:text-4xl font-faith text-gray-900 mb-5'dangerouslySetInnerHTML={{__html: text}}/>
       <div className='flex'>
         <span className='text-gray-400 text-[1.1rem] font-sans'>Share This Post:</span>
         <div className='mx-1 flex'>

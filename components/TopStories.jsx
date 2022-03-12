@@ -6,8 +6,8 @@ const TopStories = ({posts}) => {
   const sub = (str) => str.substring(0,150)
 
   return (
-    <div className='bg-white w-full px-[3.3rem]'>
-      <p className="font-bold pt-4 text-sky-500 text-2xl md:text-[2rem]  lg:text-[2.15rem] mb-2"> Top Stories</p>
+    <div className='bg-white w-full'>
+      <p className="font-bold pt-4 text-sky-500 text-xl md:text-2xl  lg:text-3xl mb-2"> Top Stories</p>
      <div className='border-b-[1px] border-gray-500'></div>
      <div className="bg-white px-[3.3rem]  text-gray-800 subpixel-antialiased  flex gap-8 pt-4">
       

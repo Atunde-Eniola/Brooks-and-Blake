@@ -8,7 +8,7 @@ const Header = () => {
         <div className="bg-orange-600 h-4 w-5 rounded-tr-lg rounded-bl-lg"></div>
         </div>
       </div>
-        <h1 className="top-0 left-0 ml-4 text-2xl font-semibold">Everyday News</h1>
+        <h1 className="top-0 left-0 ml-4 text-lg md:text-2xl font-semibold">Everyday News</h1>
       </div>
     </div>
   )

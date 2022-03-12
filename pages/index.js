@@ -19,7 +19,7 @@ import { wrapper } from '../redux/store';
 const {posts} = useSelector((state) => state.post);
 
   return (
-    <>
+    <div className='px-2 md:px-3 lg:px-[3.3rem] mb-12'>
     <Head>
       <title>B+B Challenge</title>
       <meta name="description"  content="Figma challenge"/>
@@ -30,7 +30,7 @@ const {posts} = useSelector((state) => state.post);
     <SecondPosts data={data}/>
     <CategoryName/>
     <BasePost posts={posts} />
-      </>
+      </div>
   )
 }
 
