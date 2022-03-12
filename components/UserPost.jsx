@@ -1,6 +1,8 @@
 import * as BsIcon from 'react-icons/bs'
 import moment from "moment";
-const UserPost = ({data}) => {
+
+
+const UserPost = ({data}) => {     //the post label for the userpost
 
   const fmtDate = moment(data.date).format('LL');  //date using moment
   const sub = (str) => str.substring(0,150) //convertion of js html language

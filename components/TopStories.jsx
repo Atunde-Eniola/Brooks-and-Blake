@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
-const TopStories = ({posts}) => {
+const TopStories = ({posts}) => {         
 
   const sub = (str) => str.substring(0,150)
 

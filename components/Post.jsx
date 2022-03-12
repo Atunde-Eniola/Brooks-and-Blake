@@ -1,7 +1,7 @@
 import * as FaIcons from 'react-icons/fa'
 import Image from 'next/image'
 
-const Post = ({data}) => {
+const Post = ({data}) => {      
 
   const sub = (str) => str.substring(0,150)
   const text  = sub(data.content.rendered)
