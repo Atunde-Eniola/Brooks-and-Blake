@@ -5,7 +5,7 @@ const BasePost = ({posts}) => {
   const sub = (str) => str.substring(0,150)
 
   return (
-    <div className="bg-white text-gray-800 subpixel-antialiased md:flex   ">
+    <div className="bg-white text-gray-800 subpixel-antialiased grid gap-x-4 gap-y-10 grid-col-1  md:grid-cols-2 lg:grid-cols-4  ">
       {posts.slice(0,4).map((item,index)=>{
        
        const text  = sub(item.content.rendered)

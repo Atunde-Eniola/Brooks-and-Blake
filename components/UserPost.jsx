@@ -3,7 +3,7 @@ import moment from "moment";
 
 
 const UserPost = ({data}) => {     //the post label for the userpost
-
+console.log("__DATA__", data)
   const fmtDate = moment(data.date).format('LL');  //date using moment
   const sub = (str) => str.substring(0,150) //convertion of js html language
   const text  = sub(data.content.rendered)
