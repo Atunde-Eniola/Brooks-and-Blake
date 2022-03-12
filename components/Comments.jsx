@@ -84,7 +84,7 @@ const [loading, setLoading] = useState(false)
              <form className='xl:flex-row  my-6 lg:flex'>
                <div className=' xs:mx-2 md:mx-4 font-medium my-1 md:my-2 lg:my-3'>
                  
-                 <label className="block text-gray-800 text-sm font-semibold mb-2" htmlFor="username">
+                 <label className="block text-gray-800 text-sm font-semibold mb-2" name="username">
                  Your Name
               </label>
                  <input onChange={handleOnChange} className='px-6 border-gray-300 border h-10 w-72 rounded-3xl focus:outline-none' id="username" value={value.username} type="text" name='username'/>
@@ -92,7 +92,7 @@ const [loading, setLoading] = useState(false)
 
                <div className='xs:mx-2  md:mx-4 font-medium my-3'>
                  
-                 <label className="block text-gray-800 text-sm font-semibold mb-2" htmlFor="email">Email Address</label>
+                 <label className="block text-gray-800 text-sm font-semibold mb-2" name="email">Email Address</label>
                  <input onChange={handleOnChange} className='px-6 focus:outline-none border-gray-300 border h-10 w-72 rounded-3xl' type="email" name='email' value={value.email} id="email"/>
                </div>
              </form>
