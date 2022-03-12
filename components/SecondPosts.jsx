@@ -7,6 +7,7 @@ const SecondPosts = () => {
         <div className='flex-1  sm:mb-4 md:flex md:flex-row lg:flex-col mb-2'>
           <Image
             src='/img/video-1.jpg'
+            alt='video'
             width={400}
             height={320}
             className='object-cover'
@@ -27,6 +28,7 @@ const SecondPosts = () => {
               <div className='flex lg:justify-between xl:justify-around '>
                 <Image
                   src='/img/video-1.jpg'
+                  alt='video'
                   width={200}
                   height={150}
                   className='object-cover'
@@ -45,6 +47,7 @@ const SecondPosts = () => {
               <div className='flex lg:justify-between xl:justify-around '>
                 <Image
                   src='/img/video-1.jpg'
+                  alt='video'
                   width={200}
                   height={150}
                   className='object-cover '
